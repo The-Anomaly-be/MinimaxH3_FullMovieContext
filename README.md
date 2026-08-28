@@ -66,7 +66,7 @@ python render.py prompt.txt --ref2v image.png   # REF2V (start image)
 Or just double-click `example.bat` (runs `examples/prompt.txt`).
 
 ### prompt.txt format
-**One paragraph = one video.** Paragraphs are separated by **one or more blank lines**.
+**One paragraph = one video composed of N 5s clips (default 3).** Paragraphs are separated by **one or more blank lines**.
 No special separator, no scene folders — just a plain text file.
 
 ```
