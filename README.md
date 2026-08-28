@@ -1,4 +1,5 @@
-# MinimaxH3_FullMovieContext — MiniMax H3 unlimited T2V / REF2V (Motion Context chain) # ** works on lowvram (Tested on 8GB). **
+# MinimaxH3_FullMovieContext — MiniMax H3 unlimited T2V / REF2V (Motion Context chain) #
+Works on a laptop/lowvram (Tested on 8GB GPU)
 
 A headless ComfyUI driver to render **15s** (or longer, no limit) MiniMax H3 videos by chaining
 **5s clips through the Motion Context node** (motion + audio continuity). A `prompt.txt`
