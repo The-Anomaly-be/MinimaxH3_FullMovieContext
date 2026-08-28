@@ -1,8 +1,20 @@
 # h3_render — MiniMax H3 T2V / REF2V 15s (Motion Context chain)
 
-A headless ComfyUI driver to render **15s** (or longer) MiniMax H3 videos by chaining
+A headless ComfyUI driver to render **15s** (or longer, no limit) MiniMax H3 videos by chaining
 **5s clips through the Motion Context node** (motion + audio continuity). A `prompt.txt`
 file = as many videos as it has paragraphs.
+
+This tool was built and battle-tested on a **laptop RTX 3070 (8 GB VRAM) + 32 GB RAM**.
+The Motion Context chaining approach is what makes H3 usable on consumer hardware.
+
+## Hardware reality check
+
+| Resource | Requirement |
+|----------|-------------|
+| VRAM     | 8 GB minimum (tested on RTX 3070 laptop) — uses GGUF + LowVRAMAttention |
+| RAM      | 32 GB (the FL2VA Q3_K_M GGUF ~15.5 GB is offloaded to RAM) |
+
+A 5s clip takes **~25 minutes** on an RTX 3070 8 GB / 32 GB RAM.
 
 ## Prepare the ground (REQUIRED)
 
